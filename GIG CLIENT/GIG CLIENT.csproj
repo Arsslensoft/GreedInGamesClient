@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBA019AF-1DC6-461D-A438-F164096FF676}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GIG_CLIENT</RootNamespace>
+    <AssemblyName>GIG CLIENT</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>gigiii.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutCtrl.Designer.cs">
+      <DependentUpon>AboutCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAppointmentFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAppointmentFrm.Designer.cs">
+      <DependentUpon>AddAppointmentFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CGIGPfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGIGPfrm.Designer.cs">
+      <DependentUpon>CGIGPfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CICtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CICtrl.Designer.cs">
+      <DependentUpon>CICtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CmdCTRL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CmdCTRL.Designer.cs">
+      <DependentUpon>CmdCTRL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkinCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SkinCtrl.Designer.cs">
+      <DependentUpon>SkinCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FriendCtrl.Designer.cs">
+      <DependentUpon>FriendCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIGPCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GIGPCtrl.Designer.cs">
+      <DependentUpon>GIGPCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GigSpace.cs" />
+    <Compile Include="GPlayer.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeCtrl.Designer.cs">
+      <DependentUpon>HomeCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessagesCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessagesCtrl.Designer.cs">
+      <DependentUpon>MessagesCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSGSendfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSGSendfrm.designer.cs">
+      <DependentUpon>MSGSendfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProfileCtrl.Designer.cs">
+      <DependentUpon>ProfileCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsManager.cs" />
+    <Compile Include="ShopCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShopCtrl.Designer.cs">
+      <DependentUpon>ShopCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutCtrl.en-US.resx">
+      <DependentUpon>AboutCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutCtrl.resx">
+      <DependentUpon>AboutCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAppointmentFrm.resx">
+      <DependentUpon>AddAppointmentFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CGIGPfrm.resx">
+      <DependentUpon>CGIGPfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CICtrl.resx">
+      <DependentUpon>CICtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CmdCTRL.resx">
+      <DependentUpon>CmdCTRL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkinCtrl.resx">
+      <DependentUpon>SkinCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendCtrl.resx">
+      <DependentUpon>FriendCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIGPCtrl.resx">
+      <DependentUpon>GIGPCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.en-US.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.fr-FR.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeCtrl.en-US.resx">
+      <DependentUpon>HomeCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeCtrl.resx">
+      <DependentUpon>HomeCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessagesCtrl.resx">
+      <DependentUpon>MessagesCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSGSendfrm.resx">
+      <DependentUpon>MSGSendfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileCtrl.resx">
+      <DependentUpon>ProfileCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopCtrl.resx">
+      <DependentUpon>ShopCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transacfrm.resx">
+      <DependentUpon>Transacfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferFrm.resx">
+      <DependentUpon>TransferFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Transacfrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transacfrm.Designer.cs">
+      <DependentUpon>Transacfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferFrm.Designer.cs">
+      <DependentUpon>TransferFrm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gigiii.ico" />
+    <Content Include="Ico.ico" />
+    <None Include="Resources\users.png" />
+    <None Include="Resources\bank_transaction_clock.png" />
+    <None Include="Resources\users_business.png" />
+    <None Include="Resources\user_business.png" />
+    <None Include="Resources\help_contents.png" />
+    <None Include="Resources\gig.png" />
+    <None Include="Resources\cs.png" />
+    <None Include="Resources\samp.png" />
+    <None Include="Resources\JETONS.png" />
+    <None Include="Resources\shop_cart_icon.png" />
+    <None Include="Resources\BGE.jpg" />
+    <None Include="Resources\BG.png" />
+    <None Include="app.manifest" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\my_friends.png" />
+    <None Include="Resources\notification_done.png" />
+    <None Include="Resources\e_mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GIG.Client\GIG.Client.csproj">
+      <Project>{5988FC4A-6923-4DC2-8608-0D7344E9686F}</Project>
+      <Name>GIG.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
